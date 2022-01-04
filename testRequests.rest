@@ -1,0 +1,44 @@
+
+
+Post http://localhost:2718/users/signup
+Content-Type: application/json
+
+{
+   "email":"123.com",
+   "name": "123"
+}
+
+###
+
+Post http://localhost:2718/admin/approveUser
+Content-Type: application/json
+
+{
+    "id" : "35308989536515756"
+}
+
+###
+
+POST http://localhost:2718/users/login
+Content-Type: application/json
+
+{
+    "email": "123.com",
+    "password": "123"
+}
+
+
+###
+
+Get http://localhost:2718/users/post/all
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjEyMy5jb20iLCJpYXQiOjE2NDExMjIwODgsImV4cCI6MTY0MTEyMjIwOH0.elnfZzyLCHB08753wFPhGdSnImSM1ZJra9r2LhPfO1w
+
+###
+
+Get http://localhost:2718/users/getAllUsers
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjEyMy5jb20iLCJpYXQiOjE2NDExMjEwMjUsImV4cCI6MTY0MTEyMTE0NX0.fNDSevpgpch5-OXk2e06KtQ-G1rLiZAkWb0UE7lnnME
+
+
+
+
+
